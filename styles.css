@@ -1,0 +1,48 @@
+/* Basic styling for the navigation menu */
+.navigation {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: transparent; /* Initial background color */
+    transition: background-color 0.3s ease;
+    z-index: 1000;
+  }
+  
+  .menu {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    margin: 0;
+    padding: 0;
+    background-color: transparent; /* Initial background color */
+  }
+  
+  .menu-item {
+    margin: 0;
+    padding: 0;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s ease;
+  }
+  
+  /* Hover effect for menu items */
+  .menu-item:hover a {
+    color: #ff5733; /* Change color on hover */
+  }
+  
+  /* Additional styles when scrolled */
+  .scrolled {
+    background-color: #333; /* Change background color on scroll */
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  /* Styles for active menu item (e.g., on the current page) */
+  .active {
+    font-weight: bold;
+    color: #ff5733;
+  }
